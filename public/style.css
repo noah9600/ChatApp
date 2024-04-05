@@ -1,0 +1,163 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 60px;
+    margin-top: 10%;
+}
+
+.app {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.screen {
+    display: none;
+    padding: 60px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.active {
+    display: block;
+}
+
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-input {
+    margin-bottom: 15px;
+}
+
+.form-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-input input[type="text"],
+.form-input button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-input button {
+    background-color: #ff9800; /* Orange color */
+    color: #fff;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.messages {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.my-message {
+    text-align: right;
+    background-color: #ffc163; /* Orange color */
+    color: white;
+}
+
+.other-message {
+    text-align: left;
+    background-color: #ff9800;
+    color: white;
+
+}
+
+.name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.text {
+    display: inline-block;
+}
+
+.update {
+    background-color: #ff9800; /* Orange color */
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.typebox {
+    display: flex;
+    margin-top: 20px;
+}
+
+.typebox input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.typebox button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff9800; /* Orange color */
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#exit-chat {
+    background-color: #ffaf37;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .form {
+        width: 100%;
+    }
+}
